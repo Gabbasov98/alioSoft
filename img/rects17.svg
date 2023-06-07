@@ -1,0 +1,19 @@
+<svg id="Группа_5" data-name="Группа 5" xmlns="http://www.w3.org/2000/svg" width="49.68" height="49.13" viewBox="0 0 49.68 49.13">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fc997a;
+      }
+
+      .cls-1, .cls-2 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #bbb;
+      }
+    </style>
+  </defs>
+  <path id="Прямоугольник_9_копия_20" data-name="Прямоугольник 9 копия 20" class="cls-1" d="M1678.14,4426.01h-24.85v24.67h24.85v-24.67Z" transform="translate(-1628.44 -4401.56)"/>
+  <path id="Прямоугольник_9_копия_20-2" data-name="Прямоугольник 9 копия 20" class="cls-2" d="M1653.29,4401.56h-24.85v24.66h24.85v-24.66Z" transform="translate(-1628.44 -4401.56)"/>
+</svg>
