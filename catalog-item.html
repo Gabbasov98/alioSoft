@@ -1406,7 +1406,7 @@
                             <div class="product-gallery">
                                 <div class="gallery-item _big">
 
-                                    <a data-fancybox="product" href="img/catalog_item.png" class="gallery-item__img">
+                                    <a data-caption="Подпись для изображения, которая дублируется" data-fancybox="product" href="img/catalog_item.png" class="gallery-item__img">
                                         <img src="img/catalog_item.png" alt="">
                                     </a>
 
@@ -1414,7 +1414,7 @@
 
                                 <div class="gallery-item ">
 
-                                    <a data-fancybox="product" href="img/catalog_item2.png" class="gallery-item__img">
+                                    <a data-caption="Подпись для изображения, которая дублируется" data-fancybox="product" href="img/catalog_item2.png" class="gallery-item__img">
                                         <img src="img/catalog_item2.png" alt="">
                                     </a>
 
@@ -1422,7 +1422,7 @@
 
                                 <div class="gallery-item ">
 
-                                    <a data-fancybox="product" href="img/catalog_item3.png" class="gallery-item__img">
+                                    <a data-caption="Подпись для изображения, которая дублируется" data-fancybox="product" href="img/catalog_item3.png" class="gallery-item__img">
                                         <img src="img/catalog_item3.png" alt="">
                                     </a>
 
@@ -1430,7 +1430,7 @@
 
                                 <div class="gallery-item ">
 
-                                    <a data-fancybox="product" href="img/catalog_item4.png" class="gallery-item__img">
+                                    <a data-caption="Подпись для изображения, которая дублируется" data-fancybox="product" href="img/catalog_item4.png" class="gallery-item__img">
                                         <img src="img/catalog_item4.png" alt="">
                                     </a>
 
@@ -1860,10 +1860,24 @@
                                             </div>
                                             <div class="review-form__grid">
                                                 <fieldset class="fg">
-                                                    <input type="text" placeholder="Ваше имя">
+                                                    <input class="name" type="text" placeholder="Ваше имя">
+                                                    <div class="fg__error">
+                                                        <div class="fg__error-text text12">
+                                                            <span class="error-item _required">
+                                                Вы не заполнили графу Ваше имя
+                                            </span>
+                                                        </div>
+                                                    </div>
                                                 </fieldset>
                                                 <fieldset class="fg">
-                                                    <input type="text" placeholder="Email">
+                                                    <input class="email" type="email" placeholder="Email">
+                                                    <div class="fg__error">
+                                                        <div class="fg__error-text text12">
+                                                            <span class="error-item _incorrect">
+                                                Вы неправильно ввели электронный адрес
+                                            </span>
+                                                        </div>
+                                                    </div>
                                                 </fieldset>
                                                 <div class="review-form__rating">
                                                     <div class="rating-input" data-total-rating="4" data-rating-code="1">
@@ -1895,15 +1909,15 @@
                                                         <input class="rating-input__field" type="number" value="0">
                                                     </div>
                                                     <span class="text14 gray-text">
-                                                        Оцените товар
-                                                    </span>
+                                        Оцените товар
+                                    </span>
                                                 </div>
                                                 <fieldset class="fg _full">
                                                     <textarea placeholder="Комментарий"></textarea>
                                                 </fieldset>
                                             </div>
                                             <div class="review-form__nav">
-                                                <button class="review-form__btn m-btn m-btn-primary">
+                                                <button class="_submit-review review-form__btn m-btn m-btn-primary">
                                                     <span>Опубликовать отзыв</span>
                                                 </button>
                                                 <div class="file-input">
@@ -2379,9 +2393,14 @@
                                                                     <use xlink:href="img/sprite.svg#comparison"></use>
                                                                 </svg>
                                                             </button>
-                                                            <button class="favourite-btn">
+                                                            <div class="favourite-btn">
                                                                 <span class="favourite-btn__icon"></span>
-                                                            </button>
+                                                                <div class="favourite-btn__tooltip">
+                                                                    <div class="favourite-btn__hint">
+                                                                        <span class="text14">Удалить из отложенных</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
                                                         </div>
 
 
@@ -2434,12 +2453,24 @@
                                                                 </div>
                                                             </div>
                                                             <div class="product-card__nav">
-                                                                <button class="product-card__btn m-btn m-btn-primary">
+                                                                <button class="product-card__btn add-btn m-btn m-btn-primary">
                                                                     <svg>
                                                                         <use xlink:href="img/sprite.svg#cart"></use>
                                                                     </svg>
                                                                     <span>В корзину</span>
                                                                 </button>
+                                                                <a href="" class="product-card__btn cart-btn m-btn m-btn-primary">
+                                                                    <div class="cart-btn__title">
+                                                                        <span>
+                        Перейти <br> в корзину
+                    </span>
+                                                                    </div>
+                                                                    <div class="cart-btn__desc">
+                                                                        <span>
+                        1 товар в корзине
+                    </span>
+                                                                    </div>
+                                                                </a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -2459,9 +2490,14 @@
                                                                     <use xlink:href="img/sprite.svg#comparison"></use>
                                                                 </svg>
                                                             </button>
-                                                            <button class="favourite-btn">
+                                                            <div class="favourite-btn">
                                                                 <span class="favourite-btn__icon"></span>
-                                                            </button>
+                                                                <div class="favourite-btn__tooltip">
+                                                                    <div class="favourite-btn__hint">
+                                                                        <span class="text14">Удалить из отложенных</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
                                                         </div>
 
 
@@ -2514,12 +2550,24 @@
                                                                 </div>
                                                             </div>
                                                             <div class="product-card__nav">
-                                                                <button class="product-card__btn m-btn m-btn-primary">
+                                                                <button class="product-card__btn add-btn m-btn m-btn-primary">
                                                                     <svg>
                                                                         <use xlink:href="img/sprite.svg#cart"></use>
                                                                     </svg>
                                                                     <span>В корзину</span>
                                                                 </button>
+                                                                <a href="" class="product-card__btn cart-btn m-btn m-btn-primary">
+                                                                    <div class="cart-btn__title">
+                                                                        <span>
+                        Перейти <br> в корзину
+                    </span>
+                                                                    </div>
+                                                                    <div class="cart-btn__desc">
+                                                                        <span>
+                        1 товар в корзине
+                    </span>
+                                                                    </div>
+                                                                </a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -2539,9 +2587,14 @@
                                                                     <use xlink:href="img/sprite.svg#comparison"></use>
                                                                 </svg>
                                                             </button>
-                                                            <button class="favourite-btn">
+                                                            <div class="favourite-btn">
                                                                 <span class="favourite-btn__icon"></span>
-                                                            </button>
+                                                                <div class="favourite-btn__tooltip">
+                                                                    <div class="favourite-btn__hint">
+                                                                        <span class="text14">Удалить из отложенных</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
                                                         </div>
 
 
@@ -2594,12 +2647,24 @@
                                                                 </div>
                                                             </div>
                                                             <div class="product-card__nav">
-                                                                <button class="product-card__btn m-btn m-btn-primary">
+                                                                <button class="product-card__btn add-btn m-btn m-btn-primary">
                                                                     <svg>
                                                                         <use xlink:href="img/sprite.svg#cart"></use>
                                                                     </svg>
                                                                     <span>В корзину</span>
                                                                 </button>
+                                                                <a href="" class="product-card__btn cart-btn m-btn m-btn-primary">
+                                                                    <div class="cart-btn__title">
+                                                                        <span>
+                        Перейти <br> в корзину
+                    </span>
+                                                                    </div>
+                                                                    <div class="cart-btn__desc">
+                                                                        <span>
+                        1 товар в корзине
+                    </span>
+                                                                    </div>
+                                                                </a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -2613,8 +2678,8 @@
                                                         <div class="product-card__badge">
                                                             <div class="text12">
                                                                 Экономия:
-                                                                <span class="_percent"></span> %
-                                                                / <span class="_economy"></span> ₽
+                                                                <span class="product-card__badge-text"><span class="_percent"></span> %</span>
+                                                                / <span class="product-card__badge-text"><span class="_economy"></span> ₽</span>
                                                             </div>
                                                         </div>
 
@@ -2627,9 +2692,14 @@
                                                                     <use xlink:href="img/sprite.svg#comparison"></use>
                                                                 </svg>
                                                             </button>
-                                                            <button class="favourite-btn">
+                                                            <div class="favourite-btn">
                                                                 <span class="favourite-btn__icon"></span>
-                                                            </button>
+                                                                <div class="favourite-btn__tooltip">
+                                                                    <div class="favourite-btn__hint">
+                                                                        <span class="text14">Удалить из отложенных</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
                                                         </div>
 
 
@@ -2690,12 +2760,24 @@
                                                                 </div>
                                                             </div>
                                                             <div class="product-card__nav">
-                                                                <button class="product-card__btn m-btn m-btn-primary">
+                                                                <button class="product-card__btn add-btn m-btn m-btn-primary">
                                                                     <svg>
                                                                         <use xlink:href="img/sprite.svg#cart"></use>
                                                                     </svg>
                                                                     <span>В корзину</span>
                                                                 </button>
+                                                                <a href="" class="product-card__btn cart-btn m-btn m-btn-primary">
+                                                                    <div class="cart-btn__title">
+                                                                        <span>
+                        Перейти <br> в корзину
+                    </span>
+                                                                    </div>
+                                                                    <div class="cart-btn__desc">
+                                                                        <span>
+                        1 товар в корзине
+                    </span>
+                                                                    </div>
+                                                                </a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -2715,9 +2797,14 @@
                                                                     <use xlink:href="img/sprite.svg#comparison"></use>
                                                                 </svg>
                                                             </button>
-                                                            <button class="favourite-btn">
+                                                            <div class="favourite-btn">
                                                                 <span class="favourite-btn__icon"></span>
-                                                            </button>
+                                                                <div class="favourite-btn__tooltip">
+                                                                    <div class="favourite-btn__hint">
+                                                                        <span class="text14">Удалить из отложенных</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
                                                         </div>
 
 
@@ -2770,12 +2857,24 @@
                                                                 </div>
                                                             </div>
                                                             <div class="product-card__nav">
-                                                                <button class="product-card__btn m-btn m-btn-primary">
+                                                                <button class="product-card__btn add-btn m-btn m-btn-primary">
                                                                     <svg>
                                                                         <use xlink:href="img/sprite.svg#cart"></use>
                                                                     </svg>
                                                                     <span>В корзину</span>
                                                                 </button>
+                                                                <a href="" class="product-card__btn cart-btn m-btn m-btn-primary">
+                                                                    <div class="cart-btn__title">
+                                                                        <span>
+                        Перейти <br> в корзину
+                    </span>
+                                                                    </div>
+                                                                    <div class="cart-btn__desc">
+                                                                        <span>
+                        1 товар в корзине
+                    </span>
+                                                                    </div>
+                                                                </a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -2795,9 +2894,14 @@
                                                                     <use xlink:href="img/sprite.svg#comparison"></use>
                                                                 </svg>
                                                             </button>
-                                                            <button class="favourite-btn">
+                                                            <div class="favourite-btn">
                                                                 <span class="favourite-btn__icon"></span>
-                                                            </button>
+                                                                <div class="favourite-btn__tooltip">
+                                                                    <div class="favourite-btn__hint">
+                                                                        <span class="text14">Удалить из отложенных</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
                                                         </div>
 
 
@@ -2850,12 +2954,24 @@
                                                                 </div>
                                                             </div>
                                                             <div class="product-card__nav">
-                                                                <button class="product-card__btn m-btn m-btn-primary">
+                                                                <button class="product-card__btn add-btn m-btn m-btn-primary">
                                                                     <svg>
                                                                         <use xlink:href="img/sprite.svg#cart"></use>
                                                                     </svg>
                                                                     <span>В корзину</span>
                                                                 </button>
+                                                                <a href="" class="product-card__btn cart-btn m-btn m-btn-primary">
+                                                                    <div class="cart-btn__title">
+                                                                        <span>
+                        Перейти <br> в корзину
+                    </span>
+                                                                    </div>
+                                                                    <div class="cart-btn__desc">
+                                                                        <span>
+                        1 товар в корзине
+                    </span>
+                                                                    </div>
+                                                                </a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -2907,9 +3023,14 @@
                                                         <use xlink:href="img/sprite.svg#comparison"></use>
                                                     </svg>
                                                 </button>
-                                                <button class="favourite-btn">
+                                                <div class="favourite-btn">
                                                     <span class="favourite-btn__icon"></span>
-                                                </button>
+                                                    <div class="favourite-btn__tooltip">
+                                                        <div class="favourite-btn__hint">
+                                                            <span class="text14">Удалить из отложенных</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
 
 
@@ -2962,12 +3083,24 @@
                                                     </div>
                                                 </div>
                                                 <div class="product-card__nav">
-                                                    <button class="product-card__btn m-btn m-btn-primary">
+                                                    <button class="product-card__btn add-btn m-btn m-btn-primary">
                                                         <svg>
                                                             <use xlink:href="img/sprite.svg#cart"></use>
                                                         </svg>
                                                         <span>В корзину</span>
                                                     </button>
+                                                    <a href="" class="product-card__btn cart-btn m-btn m-btn-primary">
+                                                        <div class="cart-btn__title">
+                                                            <span>
+                        Перейти <br> в корзину
+                    </span>
+                                                        </div>
+                                                        <div class="cart-btn__desc">
+                                                            <span>
+                        1 товар в корзине
+                    </span>
+                                                        </div>
+                                                    </a>
                                                 </div>
                                             </div>
                                         </div>
@@ -2987,9 +3120,14 @@
                                                         <use xlink:href="img/sprite.svg#comparison"></use>
                                                     </svg>
                                                 </button>
-                                                <button class="favourite-btn">
+                                                <div class="favourite-btn">
                                                     <span class="favourite-btn__icon"></span>
-                                                </button>
+                                                    <div class="favourite-btn__tooltip">
+                                                        <div class="favourite-btn__hint">
+                                                            <span class="text14">Удалить из отложенных</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
 
 
@@ -3042,12 +3180,24 @@
                                                     </div>
                                                 </div>
                                                 <div class="product-card__nav">
-                                                    <button class="product-card__btn m-btn m-btn-primary">
+                                                    <button class="product-card__btn add-btn m-btn m-btn-primary">
                                                         <svg>
                                                             <use xlink:href="img/sprite.svg#cart"></use>
                                                         </svg>
                                                         <span>В корзину</span>
                                                     </button>
+                                                    <a href="" class="product-card__btn cart-btn m-btn m-btn-primary">
+                                                        <div class="cart-btn__title">
+                                                            <span>
+                        Перейти <br> в корзину
+                    </span>
+                                                        </div>
+                                                        <div class="cart-btn__desc">
+                                                            <span>
+                        1 товар в корзине
+                    </span>
+                                                        </div>
+                                                    </a>
                                                 </div>
                                             </div>
                                         </div>
@@ -3067,9 +3217,14 @@
                                                         <use xlink:href="img/sprite.svg#comparison"></use>
                                                     </svg>
                                                 </button>
-                                                <button class="favourite-btn">
+                                                <div class="favourite-btn">
                                                     <span class="favourite-btn__icon"></span>
-                                                </button>
+                                                    <div class="favourite-btn__tooltip">
+                                                        <div class="favourite-btn__hint">
+                                                            <span class="text14">Удалить из отложенных</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
 
 
@@ -3122,12 +3277,24 @@
                                                     </div>
                                                 </div>
                                                 <div class="product-card__nav">
-                                                    <button class="product-card__btn m-btn m-btn-primary">
+                                                    <button class="product-card__btn add-btn m-btn m-btn-primary">
                                                         <svg>
                                                             <use xlink:href="img/sprite.svg#cart"></use>
                                                         </svg>
                                                         <span>В корзину</span>
                                                     </button>
+                                                    <a href="" class="product-card__btn cart-btn m-btn m-btn-primary">
+                                                        <div class="cart-btn__title">
+                                                            <span>
+                        Перейти <br> в корзину
+                    </span>
+                                                        </div>
+                                                        <div class="cart-btn__desc">
+                                                            <span>
+                        1 товар в корзине
+                    </span>
+                                                        </div>
+                                                    </a>
                                                 </div>
                                             </div>
                                         </div>
@@ -3141,8 +3308,8 @@
                                             <div class="product-card__badge">
                                                 <div class="text12">
                                                     Экономия:
-                                                    <span class="_percent"></span> %
-                                                    / <span class="_economy"></span> ₽
+                                                    <span class="product-card__badge-text"><span class="_percent"></span> %</span>
+                                                    / <span class="product-card__badge-text"><span class="_economy"></span> ₽</span>
                                                 </div>
                                             </div>
 
@@ -3155,9 +3322,14 @@
                                                         <use xlink:href="img/sprite.svg#comparison"></use>
                                                     </svg>
                                                 </button>
-                                                <button class="favourite-btn">
+                                                <div class="favourite-btn">
                                                     <span class="favourite-btn__icon"></span>
-                                                </button>
+                                                    <div class="favourite-btn__tooltip">
+                                                        <div class="favourite-btn__hint">
+                                                            <span class="text14">Удалить из отложенных</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
 
 
@@ -3218,12 +3390,24 @@
                                                     </div>
                                                 </div>
                                                 <div class="product-card__nav">
-                                                    <button class="product-card__btn m-btn m-btn-primary">
+                                                    <button class="product-card__btn add-btn m-btn m-btn-primary">
                                                         <svg>
                                                             <use xlink:href="img/sprite.svg#cart"></use>
                                                         </svg>
                                                         <span>В корзину</span>
                                                     </button>
+                                                    <a href="" class="product-card__btn cart-btn m-btn m-btn-primary">
+                                                        <div class="cart-btn__title">
+                                                            <span>
+                        Перейти <br> в корзину
+                    </span>
+                                                        </div>
+                                                        <div class="cart-btn__desc">
+                                                            <span>
+                        1 товар в корзине
+                    </span>
+                                                        </div>
+                                                    </a>
                                                 </div>
                                             </div>
                                         </div>
@@ -3243,9 +3427,14 @@
                                                         <use xlink:href="img/sprite.svg#comparison"></use>
                                                     </svg>
                                                 </button>
-                                                <button class="favourite-btn">
+                                                <div class="favourite-btn">
                                                     <span class="favourite-btn__icon"></span>
-                                                </button>
+                                                    <div class="favourite-btn__tooltip">
+                                                        <div class="favourite-btn__hint">
+                                                            <span class="text14">Удалить из отложенных</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
 
 
@@ -3298,12 +3487,24 @@
                                                     </div>
                                                 </div>
                                                 <div class="product-card__nav">
-                                                    <button class="product-card__btn m-btn m-btn-primary">
+                                                    <button class="product-card__btn add-btn m-btn m-btn-primary">
                                                         <svg>
                                                             <use xlink:href="img/sprite.svg#cart"></use>
                                                         </svg>
                                                         <span>В корзину</span>
                                                     </button>
+                                                    <a href="" class="product-card__btn cart-btn m-btn m-btn-primary">
+                                                        <div class="cart-btn__title">
+                                                            <span>
+                        Перейти <br> в корзину
+                    </span>
+                                                        </div>
+                                                        <div class="cart-btn__desc">
+                                                            <span>
+                        1 товар в корзине
+                    </span>
+                                                        </div>
+                                                    </a>
                                                 </div>
                                             </div>
                                         </div>
@@ -3323,9 +3524,14 @@
                                                         <use xlink:href="img/sprite.svg#comparison"></use>
                                                     </svg>
                                                 </button>
-                                                <button class="favourite-btn">
+                                                <div class="favourite-btn">
                                                     <span class="favourite-btn__icon"></span>
-                                                </button>
+                                                    <div class="favourite-btn__tooltip">
+                                                        <div class="favourite-btn__hint">
+                                                            <span class="text14">Удалить из отложенных</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
 
 
@@ -3378,12 +3584,24 @@
                                                     </div>
                                                 </div>
                                                 <div class="product-card__nav">
-                                                    <button class="product-card__btn m-btn m-btn-primary">
+                                                    <button class="product-card__btn add-btn m-btn m-btn-primary">
                                                         <svg>
                                                             <use xlink:href="img/sprite.svg#cart"></use>
                                                         </svg>
                                                         <span>В корзину</span>
                                                     </button>
+                                                    <a href="" class="product-card__btn cart-btn m-btn m-btn-primary">
+                                                        <div class="cart-btn__title">
+                                                            <span>
+                        Перейти <br> в корзину
+                    </span>
+                                                        </div>
+                                                        <div class="cart-btn__desc">
+                                                            <span>
+                        1 товар в корзине
+                    </span>
+                                                        </div>
+                                                    </a>
                                                 </div>
                                             </div>
                                         </div>
@@ -3430,9 +3648,14 @@
                                                         <use xlink:href="img/sprite.svg#comparison"></use>
                                                     </svg>
                                                 </button>
-                                                <button class="favourite-btn">
+                                                <div class="favourite-btn">
                                                     <span class="favourite-btn__icon"></span>
-                                                </button>
+                                                    <div class="favourite-btn__tooltip">
+                                                        <div class="favourite-btn__hint">
+                                                            <span class="text14">Удалить из отложенных</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
 
 
@@ -3485,12 +3708,24 @@
                                                     </div>
                                                 </div>
                                                 <div class="product-card__nav">
-                                                    <button class="product-card__btn m-btn m-btn-primary">
+                                                    <button class="product-card__btn add-btn m-btn m-btn-primary">
                                                         <svg>
                                                             <use xlink:href="img/sprite.svg#cart"></use>
                                                         </svg>
                                                         <span>В корзину</span>
                                                     </button>
+                                                    <a href="" class="product-card__btn cart-btn m-btn m-btn-primary">
+                                                        <div class="cart-btn__title">
+                                                            <span>
+                        Перейти <br> в корзину
+                    </span>
+                                                        </div>
+                                                        <div class="cart-btn__desc">
+                                                            <span>
+                        1 товар в корзине
+                    </span>
+                                                        </div>
+                                                    </a>
                                                 </div>
                                             </div>
                                         </div>
@@ -3510,9 +3745,14 @@
                                                         <use xlink:href="img/sprite.svg#comparison"></use>
                                                     </svg>
                                                 </button>
-                                                <button class="favourite-btn">
+                                                <div class="favourite-btn">
                                                     <span class="favourite-btn__icon"></span>
-                                                </button>
+                                                    <div class="favourite-btn__tooltip">
+                                                        <div class="favourite-btn__hint">
+                                                            <span class="text14">Удалить из отложенных</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
 
 
@@ -3565,12 +3805,24 @@
                                                     </div>
                                                 </div>
                                                 <div class="product-card__nav">
-                                                    <button class="product-card__btn m-btn m-btn-primary">
+                                                    <button class="product-card__btn add-btn m-btn m-btn-primary">
                                                         <svg>
                                                             <use xlink:href="img/sprite.svg#cart"></use>
                                                         </svg>
                                                         <span>В корзину</span>
                                                     </button>
+                                                    <a href="" class="product-card__btn cart-btn m-btn m-btn-primary">
+                                                        <div class="cart-btn__title">
+                                                            <span>
+                        Перейти <br> в корзину
+                    </span>
+                                                        </div>
+                                                        <div class="cart-btn__desc">
+                                                            <span>
+                        1 товар в корзине
+                    </span>
+                                                        </div>
+                                                    </a>
                                                 </div>
                                             </div>
                                         </div>
@@ -3590,9 +3842,14 @@
                                                         <use xlink:href="img/sprite.svg#comparison"></use>
                                                     </svg>
                                                 </button>
-                                                <button class="favourite-btn">
+                                                <div class="favourite-btn">
                                                     <span class="favourite-btn__icon"></span>
-                                                </button>
+                                                    <div class="favourite-btn__tooltip">
+                                                        <div class="favourite-btn__hint">
+                                                            <span class="text14">Удалить из отложенных</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
 
 
@@ -3645,12 +3902,24 @@
                                                     </div>
                                                 </div>
                                                 <div class="product-card__nav">
-                                                    <button class="product-card__btn m-btn m-btn-primary">
+                                                    <button class="product-card__btn add-btn m-btn m-btn-primary">
                                                         <svg>
                                                             <use xlink:href="img/sprite.svg#cart"></use>
                                                         </svg>
                                                         <span>В корзину</span>
                                                     </button>
+                                                    <a href="" class="product-card__btn cart-btn m-btn m-btn-primary">
+                                                        <div class="cart-btn__title">
+                                                            <span>
+                        Перейти <br> в корзину
+                    </span>
+                                                        </div>
+                                                        <div class="cart-btn__desc">
+                                                            <span>
+                        1 товар в корзине
+                    </span>
+                                                        </div>
+                                                    </a>
                                                 </div>
                                             </div>
                                         </div>
@@ -3664,8 +3933,8 @@
                                             <div class="product-card__badge">
                                                 <div class="text12">
                                                     Экономия:
-                                                    <span class="_percent"></span> %
-                                                    / <span class="_economy"></span> ₽
+                                                    <span class="product-card__badge-text"><span class="_percent"></span> %</span>
+                                                    / <span class="product-card__badge-text"><span class="_economy"></span> ₽</span>
                                                 </div>
                                             </div>
 
@@ -3678,9 +3947,14 @@
                                                         <use xlink:href="img/sprite.svg#comparison"></use>
                                                     </svg>
                                                 </button>
-                                                <button class="favourite-btn">
+                                                <div class="favourite-btn">
                                                     <span class="favourite-btn__icon"></span>
-                                                </button>
+                                                    <div class="favourite-btn__tooltip">
+                                                        <div class="favourite-btn__hint">
+                                                            <span class="text14">Удалить из отложенных</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
 
 
@@ -3741,12 +4015,24 @@
                                                     </div>
                                                 </div>
                                                 <div class="product-card__nav">
-                                                    <button class="product-card__btn m-btn m-btn-primary">
+                                                    <button class="product-card__btn add-btn m-btn m-btn-primary">
                                                         <svg>
                                                             <use xlink:href="img/sprite.svg#cart"></use>
                                                         </svg>
                                                         <span>В корзину</span>
                                                     </button>
+                                                    <a href="" class="product-card__btn cart-btn m-btn m-btn-primary">
+                                                        <div class="cart-btn__title">
+                                                            <span>
+                        Перейти <br> в корзину
+                    </span>
+                                                        </div>
+                                                        <div class="cart-btn__desc">
+                                                            <span>
+                        1 товар в корзине
+                    </span>
+                                                        </div>
+                                                    </a>
                                                 </div>
                                             </div>
                                         </div>
@@ -3766,9 +4052,14 @@
                                                         <use xlink:href="img/sprite.svg#comparison"></use>
                                                     </svg>
                                                 </button>
-                                                <button class="favourite-btn">
+                                                <div class="favourite-btn">
                                                     <span class="favourite-btn__icon"></span>
-                                                </button>
+                                                    <div class="favourite-btn__tooltip">
+                                                        <div class="favourite-btn__hint">
+                                                            <span class="text14">Удалить из отложенных</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
 
 
@@ -3821,12 +4112,24 @@
                                                     </div>
                                                 </div>
                                                 <div class="product-card__nav">
-                                                    <button class="product-card__btn m-btn m-btn-primary">
+                                                    <button class="product-card__btn add-btn m-btn m-btn-primary">
                                                         <svg>
                                                             <use xlink:href="img/sprite.svg#cart"></use>
                                                         </svg>
                                                         <span>В корзину</span>
                                                     </button>
+                                                    <a href="" class="product-card__btn cart-btn m-btn m-btn-primary">
+                                                        <div class="cart-btn__title">
+                                                            <span>
+                        Перейти <br> в корзину
+                    </span>
+                                                        </div>
+                                                        <div class="cart-btn__desc">
+                                                            <span>
+                        1 товар в корзине
+                    </span>
+                                                        </div>
+                                                    </a>
                                                 </div>
                                             </div>
                                         </div>
@@ -3846,9 +4149,14 @@
                                                         <use xlink:href="img/sprite.svg#comparison"></use>
                                                     </svg>
                                                 </button>
-                                                <button class="favourite-btn">
+                                                <div class="favourite-btn">
                                                     <span class="favourite-btn__icon"></span>
-                                                </button>
+                                                    <div class="favourite-btn__tooltip">
+                                                        <div class="favourite-btn__hint">
+                                                            <span class="text14">Удалить из отложенных</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
 
 
@@ -3901,12 +4209,24 @@
                                                     </div>
                                                 </div>
                                                 <div class="product-card__nav">
-                                                    <button class="product-card__btn m-btn m-btn-primary">
+                                                    <button class="product-card__btn add-btn m-btn m-btn-primary">
                                                         <svg>
                                                             <use xlink:href="img/sprite.svg#cart"></use>
                                                         </svg>
                                                         <span>В корзину</span>
                                                     </button>
+                                                    <a href="" class="product-card__btn cart-btn m-btn m-btn-primary">
+                                                        <div class="cart-btn__title">
+                                                            <span>
+                        Перейти <br> в корзину
+                    </span>
+                                                        </div>
+                                                        <div class="cart-btn__desc">
+                                                            <span>
+                        1 товар в корзине
+                    </span>
+                                                        </div>
+                                                    </a>
                                                 </div>
                                             </div>
                                         </div>

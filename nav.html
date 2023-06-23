@@ -29,7 +29,7 @@
 </style>
 
 <body class="page">
-
+    <div class="header"></div>
     <div class="wrapper" style="padding: 50px;">
         <a href="index.html" style="display: block; margin-bottom: 20px;">
             1. Главная
@@ -128,41 +128,489 @@
         <br>
         <br>
 
-        <!--        <a href="maintenance.html" style="display: block; margin-bottom: 20px;">-->
-        <!--            30. Страница «Сопровождение 1С»-->
-        <!--        </a>-->
-        <!--        <a href="services-item3.html" style="display: block; margin-bottom: 20px;">-->
-        <!--            31. Карточка сервисов 1С-->
-        <!--        </a>-->
-        <!--        <a href="solutions.html" style="display: block; margin-bottom: 20px;">-->
-        <!--            32. Отраслевые решения-->
-        <!--        </a>-->
-        <!--        <a href="solutions.html" style="display: block; margin-bottom: 20px;">-->
-        <!--            33. Страница отраслевого решения-->
-        <!--        </a>-->
+        <a href="maintenance.html" style="display: block; margin-bottom: 20px;">
+            30. Страница «Сопровождение 1С»
+        </a>
+        <a href="services-item3.html" style="display: block; margin-bottom: 20px;">
+            31. Карточка сервисов 1С
+        </a>
+        <a href="solutions.html" style="display: block; margin-bottom: 20px;">
+            32. Отраслевые решения
+        </a>
+        <a href="solution-item.html" style="display: block; margin-bottom: 20px;">
+            33. Страница отраслевого решения
+        </a>
+        <a href="search.html" style="display: block; margin-bottom: 20px;">
+            34. Страница результатов поиска
+        </a>
+        <a href="cart.html" style="display: block; margin-bottom: 20px;">
+            35. Страница «Корзина».
+        </a>
+        <a href="order.html" style="display: block; margin-bottom: 20px;">
+            36. Страница формирования заказа
+        </a>
+        <a href="order-confirm.html" style="display: block; margin-bottom: 20px;">
+            37. Страница подтверждения заказа
+        </a>
+        <a href="news.html" style="display: block; margin-bottom: 20px;">
+            38 и 40. Страница «Новости».
+        </a>
+        <a href="news-item.html" style="display: block; margin-bottom: 20px;">
+            39. Страница новости
+        </a>
+        <a href="news.html" style="display: block; margin-bottom: 20px;">
+            40. Страница «Полезная информация».
+        </a>
+        <a href="news-item2.html" style="display: block; margin-bottom: 20px;">
+            41. Страница статьи
+        </a>
+        <a href="reg.html" style="display: block; margin-bottom: 20px;">
+            42. Форма-окно регистрации
+        </a>
+        <a href="change-password.html" style="display: block; margin-bottom: 20px;">
+            43. Форма-окно смены пароля
+        </a>
+        <a href="recover-pass.html" style="display: block; margin-bottom: 20px;">
+            44. Форма-окно восстановления пароля
+        </a>
+        <a href="recover-pass2.html" style="display: block; margin-bottom: 20px;">
+            44-2. Форма-окно восстановления пароля
+        </a>
+        <a href="recover-pass3.html" style="display: block; margin-bottom: 20px;">
+            44-3. Форма-окно восстановления пароля
+        </a>
+        <a href="recover-pass4.html" style="display: block; margin-bottom: 20px;">
+            44-4. Форма-окно восстановления пароля
+        </a>
+        <a href="login.html" style="display: block; margin-bottom: 20px;">
+            45. Форма-окно авторизации
+        </a>
+        <a href="lk.html" style="display: block; margin-bottom: 20px;">
+            46. Личный кабинет
+        </a>
+        <a href="orders.html" style="display: block; margin-bottom: 20px;">
+            47. Страница «Мои заказы»
+        </a>
+        <a href="comparison.html" style="display: block; margin-bottom: 20px;">
+            48. Страница «Сравнение».
+        </a>
+        <a href="favourite.html" style="display: block; margin-bottom: 20px;">
+            49. Страница «Отложенные товары»
+        </a>
+        <a href="edit.html" style="display: block; margin-bottom: 20px;">
+            50. Страница «Редактирование профиля»
+        </a>
 
+        <div style="font-size: 30px; font-weight: 700; margin-bottom: 20px;">
+            51. Модальные окна:
+        </div>
 
-        <!--        <button style="border: 2px solid #000;margin-bottom: 20px;" data-bs-toggle="modal" data-bs-target="#quickOrder">-->
-        <!--            Быстрый заказ-->
-        <!--        </button>-->
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-modal="serviceModal">
+            Заказать услугу
+            Обслуживание кассы
+        </button>
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-modal="consultModal">
+            Заказать бесплатную
+            консультацию
+        </button>
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-modal="buyModal">
+            Купить в один клик
+        </button>
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-modal="tariffModal">
+            Заказ тарифа по договору
+        </button>
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-modal="saveModal">
+            Личные данные сохранены!
+        </button>
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-modal="addModal">
+            Товар успешно
+            добавлен в корзину!
+        </button>
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-modal="sureModal">
+            Вы уверены, что хотите удалить
+            товар из списка сравнения?
+        </button>
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-modal="helpModal">
+            Что вы ищете?
+        </button>
 
     </div>
 
-    <div class="modal" id="quickOrder" aria-hidden="true">
-        <div class="modal-dialog">
-            <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.55401 10.5L2 2.94599L2.94599 2L10.5 9.55401L18.054 2L19 2.94599L11.446 10.5L19 18.054L18.054 19L10.5 11.446L2.94599 19L2 18.054L9.55401 10.5Z" fill="#333333" />
-                </svg>
+    <div class="modal" id="serviceModal">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <button class="modal__close _close-modal">
+                <img src="img/close.svg" alt="">
             </button>
+            <div class="modal__scroll">
+                <div class="modal__info">
+                    <div class="text16">Заказать услугу</div>
+                    <div class="text18 text-bold">Обслуживание кассы</div>
+                </div>
+                <form class="modal-form">
+                    <fieldset class="fg">
+                        <input class="name" type="text" placeholder="ФИО*">
+                        <div class="fg__error">
+                            <div class="fg__error-text text12">
+                                <span class="error-item _required">
+                    Вы не заполнили графу ФИО
+                </span>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="fg">
+                        <input class="phone" type="tel" placeholder="+7 (___) ___ - __ - __*">
+                        <div class="fg__error">
+                            <div class="fg__error-text text12">
+                                <span class="error-item _incorrect">
+                    Вы неправильно ввели номер телефона
+                </span>
+                            </div>
+                        </div>
+                    </fieldset>
 
 
+                    <fieldset class="fg">
+                        <textarea placeholder="Ваш вопрос"></textarea>
+                    </fieldset>
+                    <div class="m-check">
+                        <input checked="" type="checkbox">
+                        <label>
+                            <span>
+                Я соглашаюсь на обработку моих персональных
+                данных и ознакомлен(а)
+                с <a href="">политикой конфиденциальности</a>
+            </span>
+                        </label>
+                    </div>
+                    <button class="_submit-order modal-form__btn m-btn m-btn-primary">
+                        <span>Отправить запрос</span>
+                    </button>
+                </form>
 
+            </div>
         </div>
     </div>
 
 
-    <!-- <div class="modal-backdrop show"></div> -->
+    <div class="modal" id="consultModal">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <button class="modal__close _close-modal">
+                <img src="img/close.svg" alt="">
+            </button>
+            <div class="modal__scroll">
+                <div class="modal__info">
+                    <div class="text18 text-bold">
+                        Заказать бесплатную
+                        консультацию
+                    </div>
+                </div>
+                <form class="modal-form">
+                    <fieldset class="fg">
+                        <input class="name" type="text" placeholder="ФИО*">
+                        <div class="fg__error">
+                            <div class="fg__error-text text12">
+                                <span class="error-item _required">
+                    Вы не заполнили графу ФИО
+                </span>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="fg">
+                        <input class="phone" type="tel" placeholder="+7 (___) ___ - __ - __*">
+                        <div class="fg__error">
+                            <div class="fg__error-text text12">
+                                <span class="error-item _incorrect">
+                    Вы неправильно ввели номер телефона
+                </span>
+                            </div>
+                        </div>
+                    </fieldset>
+
+
+                    <fieldset class="fg">
+                        <textarea placeholder="Ваш вопрос"></textarea>
+                    </fieldset>
+                    <div class="m-check">
+                        <input checked="" type="checkbox">
+                        <label>
+                            <span>
+                Я соглашаюсь на обработку моих персональных
+                данных и ознакомлен(а)
+                с <a href="">политикой конфиденциальности</a>
+            </span>
+                        </label>
+                    </div>
+                    <button class="_submit-order modal-form__btn m-btn m-btn-primary">
+                        <span>Отправить запрос</span>
+                    </button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="buyModal">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <button class="modal__close _close-modal">
+                <img src="img/close.svg" alt="">
+            </button>
+            <div class="modal__scroll">
+                <div class="modal__info">
+                    <div class="text18 text-bold">
+                        Купить в один клик
+                    </div>
+                </div>
+                <div class="modal-product">
+                    <div class="modal-product__img">
+                        <img src="img/modal_product.png" alt="">
+                    </div>
+                    <div class="modal-product__content">
+                        <div class="modal-product__text">
+                            Название товара должно быть в две строки, а больше и не надо
+                        </div>
+                        <div class="modal-product__price">
+                            <div class="text18 text-bold">
+                                21 650 ₽
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form class="modal-form">
+                    <fieldset class="fg">
+                        <input class="name" type="text" placeholder="ФИО*">
+                        <div class="fg__error">
+                            <div class="fg__error-text text12">
+                                <span class="error-item _required">
+                    Вы не заполнили графу ФИО
+                </span>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="fg">
+                        <input class="phone" type="tel" placeholder="+7 (___) ___ - __ - __*">
+                        <div class="fg__error">
+                            <div class="fg__error-text text12">
+                                <span class="error-item _incorrect">
+                    Вы неправильно ввели номер телефона
+                </span>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="fg">
+                        <input class="email" type="email" placeholder="E-mail*">
+                        <div class="fg__error">
+                            <div class="fg__error-text text12">
+                                <span class="error-item _incorrect">
+                    Вы неправильно ввели электронный адрес
+                </span>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <div class="m-check">
+                        <input checked="" type="checkbox">
+                        <label>
+                            <span>
+                Я соглашаюсь на обработку моих персональных
+                данных и ознакомлен(а)
+                с <a href="">политикой конфиденциальности</a>
+            </span>
+                        </label>
+                    </div>
+                    <button class="_submit-order modal-form__btn m-btn m-btn-primary">
+                        <span>Отправить запрос</span>
+                    </button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal" id="tariffModal">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <button class="modal__close _close-modal">
+                <img src="img/close.svg" alt="">
+            </button>
+            <div class="modal__scroll">
+                <div class="modal__info">
+                    <div class="text18 text-bold">
+                        Заказ тарифа по договору
+                    </div>
+                    <div class="text27 text-bold">
+                        Базовый
+                    </div>
+                </div>
+                <form class="modal-form">
+                    <fieldset class="fg">
+                        <input class="name" type="text" placeholder="ФИО*">
+                        <div class="fg__error">
+                            <div class="fg__error-text text12">
+                                <span class="error-item _required">
+                    Вы не заполнили графу ФИО
+                </span>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="fg">
+                        <input class="phone" type="tel" placeholder="+7 (___) ___ - __ - __*">
+                        <div class="fg__error">
+                            <div class="fg__error-text text12">
+                                <span class="error-item _incorrect">
+                    Вы неправильно ввели номер телефона
+                </span>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="fg">
+                        <input class="email" type="email" placeholder="E-mail*">
+                        <div class="fg__error">
+                            <div class="fg__error-text text12">
+                                <span class="error-item _incorrect">
+                    Вы неправильно ввели электронный адрес
+                </span>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <div class="m-check">
+                        <input checked="" type="checkbox">
+                        <label>
+                            <span>
+                Я соглашаюсь на обработку моих персональных
+                данных и ознакомлен(а)
+                с <a href="">политикой конфиденциальности</a>
+            </span>
+                        </label>
+                    </div>
+                    <button class="_submit-order modal-form__btn m-btn m-btn-primary">
+                        <span>Отправить запрос</span>
+                    </button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="saveModal">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <button class="modal__close _close-modal">
+                <img src="img/close.svg" alt="">
+            </button>
+            <div class="modal__scroll">
+                <div class="success-mess">
+                    <div class="success-mess__icon">
+                        <img src="img/yes-red.svg" alt="">
+                    </div>
+                    <div class="text18 text-bold">
+                        Личные данные сохранены!
+                    </div>
+                    <button class="auth-form__btn m-btn m-btn-primary">
+                        <span>Продолжить</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="addModal">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <button class="modal__close _close-modal">
+                <img src="img/close.svg" alt="">
+            </button>
+            <div class="modal__scroll">
+                <div class="success-mess">
+                    <div class="success-mess__icon">
+                        <img src="img/yes-red.svg" alt="">
+                    </div>
+                    <div class="text18 text-bold">
+                        Товар успешно <br>
+                    добавлен в корзину!
+                    </div>
+                    <button class="auth-form__btn m-btn m-btn-primary">
+                        <span>Продолжить</span>
+                    </button>
+                    <div class="auth-form__link">
+                        <button class="_close-modal text16 lh169">Продолжить покупки</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal" id="sureModal">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <button class="modal__close _close-modal">
+                <img src="img/close.svg" alt="">
+            </button>
+            <div class="modal__scroll">
+                <div class="confirm-mess">
+                    <div class="text18 text-bold">
+                        Вы уверены, что хотите
+                        очистить список сравнения?
+                    </div>
+                    <div class="confirm-mess__nav">
+                        <button class="confirm-mess__btn m-btn m-btn-black">
+                            <span>Да</span>
+                        </button>
+                        <button class="confirm-mess__btn m-btn m-btn-primary">
+                            <span>Нет</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal help-modal" id="helpModal">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <button class="modal__close _close-modal">
+                <img src="img/close-white.svg" alt="">
+            </button>
+            <div class="modal__scroll">
+                <div class="help-modal__top">
+                    <div class="text18 text-bold">
+                        Что вы ищете?
+                    </div>
+                </div>
+                <div class="help-modal__links">
+                    <a href="" class="help-modal__link">
+                        <span>Нужно починить оборудование</span>
+                    </a>
+                    <a href="" class="help-modal__link">
+                        <span>Хотите приобрести оборудование</span>
+                    </a>
+                    <a href="" class="help-modal__link">
+                        <span>Не работает программа</span>
+                    </a>
+                    <a href="" class="help-modal__link">
+                        <span>Нужно оптимизировать работу бизнеса</span>
+                    </a>
+                    <a href="" class="help-modal__link">
+                        <span>Оптимизация нового бизнеса</span>
+                    </a>
+                    <a href="" class="help-modal__link">
+                        <span>Проблемы с учётом в компании</span>
+                    </a>
+                </div>
+                <button class="help-modal__btn m-btn m-btn-primary">
+                    <span>Нужна консультация</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
     <!--  -->
     <script src="js/libs.min.js"></script>
     <script src="js/main.min.js"></script>
