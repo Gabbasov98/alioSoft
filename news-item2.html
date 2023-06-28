@@ -180,7 +180,7 @@
                                         <path fill="#434242" d="M107.9,348C88.2,348,72,331.7,72,312c0-19.8,16.3-35.9,36.1-35.9c19.8,0,35.9,16.3,35.9,36.1   C144,331.9,127.7,348.1,107.9,348z M108,324c6.5,0,11.9-5.4,12-11.9c0.1-6.5-5.3-12-11.8-12.1c-6.6-0.1-12.2,5.4-12.2,12.1   C96.1,318.6,101.5,324,108,324z" />
                                         <path fill="#434242" d="M216,312.2c-0.1-19.8,16.1-36.1,35.9-36.1c19.8-0.1,36.1,16.1,36.1,35.8c0.1,19.8-16.1,36.1-35.8,36.1   C232.4,348.1,216.1,331.9,216,312.2z M252.2,324c6.5-0.1,11.9-5.6,11.8-12.1c0-6.6-5.7-12.1-12.3-11.9c-6.5,0.2-11.8,5.7-11.6,12.2   C240.2,318.8,245.7,324.1,252.2,324z" />
                                     </svg>
-                                    <span class="_pin">3</span>
+                                    <div class="_pin"><span>3</span></div>
                                 </a>
                             </div>
                             <div class="header-action__group">
@@ -831,7 +831,7 @@
                                     <path fill="#434242" d="M107.9,348C88.2,348,72,331.7,72,312c0-19.8,16.3-35.9,36.1-35.9c19.8,0,35.9,16.3,35.9,36.1   C144,331.9,127.7,348.1,107.9,348z M108,324c6.5,0,11.9-5.4,12-11.9c0.1-6.5-5.3-12-11.8-12.1c-6.6-0.1-12.2,5.4-12.2,12.1   C96.1,318.6,101.5,324,108,324z" />
                                     <path fill="#434242" d="M216,312.2c-0.1-19.8,16.1-36.1,35.9-36.1c19.8-0.1,36.1,16.1,36.1,35.8c0.1,19.8-16.1,36.1-35.8,36.1   C232.4,348.1,216.1,331.9,216,312.2z M252.2,324c6.5-0.1,11.9-5.6,11.8-12.1c0-6.6-5.7-12.1-12.3-11.9c-6.5,0.2-11.8,5.7-11.6,12.2   C240.2,318.8,245.7,324.1,252.2,324z" />
                                 </svg>
-                                <span class="_pin">3</span>
+                                <div class="_pin"><span>3</span></div>
                             </a>
                         </div>
                         <div class="header-action__group">
@@ -1552,15 +1552,15 @@
                                                         </div>
                                                         <div class="news-text__nav">
                                                             <div class="news-text__favorites">
-                                                                <button class="news-text__favorites-btn">
+                                                                <div class="news-text__favorites-btn">
                                                                     <img src="img/love2.png" alt="">
-                                                                </button>
-                                                                <span>23</span>
+                                                                </div>
+                                                                <span class="_likes-count">23</span>
                                                             </div>
                                                             <div class="news-text__comment">
-                                                                <button class="news-text__comment-btn">
+                                                                <div class="news-text__comment-btn">
                                                                     <img src="img/comment.png" alt="">
-                                                                </button>
+                                                                </div>
                                                                 <span>16</span>
                                                             </div>
                                                         </div>
@@ -1695,12 +1695,29 @@
                                         </div>
                                         <div class="review-form__grid">
                                             <fieldset class="fg">
-                                                <input type="text" placeholder="Ваше имя">
+                                                <input class="name" type="text" placeholder="Ваше имя">
+                                                <div class="fg__error">
+                                                    <div class="fg__error-text text12">
+                                                        <span class="error-item _required">
+                                Вы не заполнили графу Ваше имя
+                            </span>
+                                                    </div>
+                                                </div>
                                             </fieldset>
                                             <fieldset class="fg">
-                                                <input type="text" placeholder="Email">
+                                                <input class="email" type="email" placeholder="Email">
+                                                <div class="fg__error">
+                                                    <div class="fg__error-text text12">
+                                                        <span class="error-item _incorrect">
+                                Вы неправильно ввели электронный адрес
+                            </span>
+                                                    </div>
+                                                </div>
                                             </fieldset>
                                             <div class="review-form__estimation">
+                                                <div class="favourite-btn">
+                                                    <span class="favourite-btn__icon"></span>
+                                                </div>
                                                 <div class="review-form__estimation-title">Оцените статью</div>
                                                 <div class="review-form__estimation-text">
                                                     <p>Поставьте лайк, если статья оказалась полезной или была вам интересна</p>
@@ -1711,7 +1728,7 @@
                                             </fieldset>
                                         </div>
                                         <div class="review-form__nav">
-                                            <button class="review-form__btn m-btn m-btn-primary">
+                                            <button class="_submit-review review-form__btn m-btn m-btn-primary">
                                                 <span>Оставить комментарий</span>
                                             </button>
                                         </div>
@@ -1747,7 +1764,10 @@
                                                                 <span>Ответить</span>
                                                             </button>
                                                             <button class="feedback-card__favorite">
-                                                                <img src="img/favourite2.webp" alt="">
+                                                                <span class="favourite-btn">
+                                    <span class="favourite-btn__icon"></span>
+                                                                </span>
+                                                                <span class="text16">5</span>
                                                             </button>
                                                         </div>
                                                     </div>
@@ -1791,7 +1811,10 @@
                                                                     <span>Ответить</span>
                                                                 </button>
                                                                 <button class="feedback-card__favorite">
-                                                                    <img src="img/favourite2.webp" alt="">
+                                                                    <span class="favourite-btn">
+                                        <span class="favourite-btn__icon"></span>
+                                                                    </span>
+                                                                    <span class="text16">5</span>
                                                                 </button>
                                                             </div>
                                                         </div>
@@ -1834,7 +1857,10 @@
                                                                     <span>Ответить</span>
                                                                 </button>
                                                                 <button class="feedback-card__favorite">
-                                                                    <img src="img/favourite2.webp" alt="">
+                                                                    <span class="favourite-btn">
+                                        <span class="favourite-btn__icon"></span>
+                                                                    </span>
+                                                                    <span class="text16">5</span>
                                                                 </button>
                                                             </div>
                                                         </div>
@@ -1868,7 +1894,10 @@
                                                             <span>Ответить</span>
                                                         </button>
                                                         <button class="feedback-card__favorite">
-                                                            <img src="img/favourite2.webp" alt="">
+                                                            <span class="favourite-btn">
+                                <span class="favourite-btn__icon"></span>
+                                                            </span>
+                                                            <span class="text16">5</span>
                                                         </button>
                                                     </div>
                                                 </div>
